@@ -69,3 +69,35 @@
 #target="_blank abrir nova guia
 #identificaçao <section id="primeira">
 #para chamar <li><a href="#primeira"
+
+
+
+
+
+#                CSS
+# e a beleza
+
+#para mecher em uma tag especifica porem no codigo inteiro voce faz o seguinte
+#dentro da <head> voce faz o seguinte passo
+
+#<style>
+# tag.exemple {
+#   oque voce quer mexer por exemplo 
+#   cor 
+#    fonte 
+#      e etc
+#
+#</style>
+
+#E sempre bom voce abrir um arquivo style.css separado para caregar o seu css la
+# ja no seu codigo voce poem esta tag por exemplo 
+#<link rel="stylesheet" href="style.css">
+#todo seu css fica dentro de uma folder "css"
+#dentro de uma file que sera chamada
+
+
+#para por imagem no site segue o seguinte codigo
+
+#<img src="link da foto" alt="algum comentario"
+https://placehold.co/600x400/png
+#quando voce quer passar o mouse em cima e der alguma animaçao voce digita &hover
