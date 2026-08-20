@@ -53,9 +53,11 @@ p {
 }
 
 nav a {
+    font-size: medium;
     transition: 0.5s;
 }
 nav a:hover {
+    font-size: xx-large;
     background-color: rgb(150, 91, 199);
     color: white;
 }
@@ -123,4 +125,33 @@ thead {
 tbody {
     
     background-color: rgb(255, 250, 177);
+}
+#cadastro {
+    border-left: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    border: 5px solid black;
+    border-radius: 8px;
+    font-size: xx-large;
+    background-color: rgb(236, 236, 236);
+}
+
+button {
+    transition: 1s;
+    background-color: plum;
+    font-size: medium;
+    color: rgb(0, 0, 0);
+&:hover{
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    transition: 1s;
+    background-color: rgb(242, 198, 255);
+}
+}
+
+.campo {
+    padding: 5px;
 }
