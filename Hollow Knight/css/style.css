@@ -102,6 +102,7 @@ h3 {
     color: pink;
 }
 table {
+    background-color: black;
     font-size: xx-large;
         margin: 0 auto;
         text-align: center;
@@ -128,17 +129,32 @@ tbody {
 #cadastro {
     border-left: 2px;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+          padding: 5px;
+        border: 5px solid black;
+        border-radius: 10px;
+        font-size: xx-large;
+        background-color: rgb(160, 158, 160);
+}
+#cadastre {
+    border-left: 2px;
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 5px;
-    border: 5px solid black;
-    border-radius: 8px;
-    font-size: xx-large;
-    background-color: rgb(236, 236, 236);
+    align-items: flex-start;
+        padding: 5px;
+        border: 5px solid black;
+        border-radius: 10px;
+        font-size: xx-large;
+        background-color: rgb(160, 158, 160);
 }
 
 button {
+    display: flex;
+    align-items: center;
     transition: 1s;
     background-color: plum;
     font-size: medium;
@@ -148,9 +164,27 @@ button {
     font-size: x-large;
     transition: 1s;
     background-color: rgb(242, 198, 255);
+    
 }
 }
 
 .campo {
-    padding: 5px;
+    letter-spacing: 3px;
+    
+}
+.campoa {
+    display: flex;
+    align-items: center;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+}
+textarea {
+    font-size: xx-large;
+    background-color: rgb(196, 196, 196);
+    padding: 10px 200px;
 }
