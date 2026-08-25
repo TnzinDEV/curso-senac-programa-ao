@@ -5,8 +5,13 @@ nav {
     gap: 12px;
     border-right: 3px solid rgb(39, 2, 2);
     max-width: 220px;
-    background-color: rgb(95, 7, 7);
-    border-bottom: 3px solid rgb(39, 2, 2);
+    background-color: rgb(207, 0, 0);
+    border-bottom: 3px solid rgb(94, 4, 4);
+    color: white;
+    
+}
+nav a{
+    text-decoration: none;
 }
 
 #sobre {
@@ -20,12 +25,11 @@ nav {
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     max-width: 1000px;
 
     max-height: 1000px;
-
 
 
 }
@@ -68,12 +72,32 @@ html {
 
 
 .jogo {
+    font-size: medium;
     color: white;
+    border: 1px solid white;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin: 10px;
+    text-size-adjust: 1px;
+
+    & :hover {
+        transform: translateY(-5px);
+        font-size: small;
+        background-color: rgb(180, 102, 180);
+    }
 }
 
-    
 
+.jogo img {
+    border-radius: 100px;
+}
+h3 {
+    font-size: x-small;
+}
 
+h4 {
+    font-size: x-small;
+}
 
 
 
@@ -141,4 +165,163 @@ button {
         background-color: gray;
         font-size: x-small;
     }
+}
+
+
+
+
+
+
+
+
+#formulario1 {
+    background-color: #201f1f;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 30px;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+fieldset.campo-opcoes {
+    border: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+   
+}
+
+fieldset {
+     border: 1px solid transparent;
+    font-family: Unbounded;
+    font-size: 25px;
+}
+
+
+.opcao-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Unbounded', sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #2f3030;
+    transition: background-color 0.2s ease;
+    
+    &:hover {
+    background-color: #3e4040;
+}
+}
+
+.opcao-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.Problems {
+    padding-bottom: 20px;
+}
+
+.continuar {
+    background-color: #353636;
+    color: white;
+    font-size: 20px;
+    font-family: unbounded;
+    letter-spacing: 1px;
+    padding: 4px 10px 4px 10px;
+    border: 1px solid #111111;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+
+&:hover{
+    background-color:#4a8adb;
+    transform: scale(1.1);
+    color: rgb(231, 255, 231);
+}
+}
+/*===========f2=========*/
+#formulario2 {
+    background-color: #201f1f;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 35px;
+    margin: 30px auto;
+    max-width: 550px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+#formulario2 h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.grupo-campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+    font-family: 'Unbounded', sans-serif;
+}
+
+.grupo-campo label {
+    font-size: 13px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.opcional {
+    font-size: 11px;
+    color: #A0A0A0;
+}
+
+.grupo-campo input,
+.grupo-campo textarea {
+    width: 100%;
+    background-color: #2f3030;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    padding: 12px 14px;
+    color: #FFFFFF;
+    font-family: 'Unbounded', sans-serif;
+    font-size: 13px;
+    text-align: left;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.grupo-campo textarea {
+    border-color: #00E5FF;
+    box-shadow: 0 0 8px rgba(0, 229, 255, 0.3);
+}
+
+.grupo-campo textarea {
+    min-height: 120px;
+}
+
+.enviar {
+    width: 100%;
+    background-color: #00FF88;
+    color: #111111;
+    font-size: 15px;
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 700;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 10px;
+&:hover {
+    background-color: #00E5FF;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 229, 255, 0.3);
+}
 }
