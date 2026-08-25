@@ -63,13 +63,13 @@ html {
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         color: rgb(66, 65, 65);
             border: 2px solid rgb(60, 255, 11);
-            font-size: medium;
+            
             background-color: greenyellow;
 
             &:hover {
                 transition: 0.5s;
                 background-color: rgb(88, 131, 24);
-                font-size: xx-large;
+                
             }
         
     }
