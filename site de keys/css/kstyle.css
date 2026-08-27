@@ -8,10 +8,12 @@ nav {
     background-color: rgb(207, 0, 0);
     border-bottom: 3px solid rgb(94, 4, 4);
     color: white;
-    
+
 }
-nav a{
+
+nav a {
     text-decoration: none;
+
     & :hover {
         transition: 1s;
         box-shadow: rgb(75, 18, 8);
@@ -32,7 +34,7 @@ nav a{
     justify-content: space-between;
     text-align: center;
     max-width: 1000px;
-
+flex-direction: column;
     max-height: 1000px;
 
 
@@ -60,19 +62,19 @@ html {
 
 
 .jogo button {
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: rgb(66, 65, 65);
-            border: 2px solid rgb(60, 255, 11);
-            
-            background-color: greenyellow;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(66, 65, 65);
+    border: 2px solid rgb(60, 255, 11);
 
-            &:hover {
-                transition: 0.5s;
-                background-color: rgb(88, 131, 24);
-                
-            }
-        
+    background-color: greenyellow;
+
+    &:hover {
+        transition: 0.5s;
+        background-color: rgb(88, 131, 24);
+
     }
+
+}
 
 
 .jogo {
@@ -85,19 +87,21 @@ html {
     text-size-adjust: 1px;
 
     transition: transform 0.2s ease, font-size 0.2s ease;
+
+    
 }
 
 .jogo:hover {
     transform: translateY(-5px);
     font-size: small;
     background-color: rgb(77, 39, 77);
-    box-shadow: 0 0 10px rgb(52, 1, 94),
-                0 0 10px rgb(52, 1, 94),
-                0 0 10px rgb(52, 1, 94);
+    box-shadow: 0 0 30px rgb(0, 255, 98),
+        0 0 30px rgb(0, 255, 98),
+        0 0 30px rgb(0, 255, 98);
 }
 
 .jogo img {
-    
+
     border-radius: 5px;
 }
 
@@ -239,11 +243,11 @@ fieldset.campo-opcoes {
     display: flex;
     flex-direction: column;
     gap: 12px;
-   
+
 }
 
 fieldset {
-     border: 1px solid transparent;
+    border: 1px solid transparent;
     font-family: Unbounded;
     font-size: 25px;
 }
@@ -261,10 +265,10 @@ fieldset {
     border-radius: 5px;
     background-color: #2f3030;
     transition: background-color 0.2s ease;
-    
+
     &:hover {
-    background-color: #3e4040;
-}
+        background-color: #3e4040;
+    }
 }
 
 .opcao-item input[type="checkbox"] {
@@ -288,12 +292,13 @@ fieldset {
     transition: all 0.3s ease-in;
     cursor: pointer;
 
-&:hover{
-    background-color:#4a8adb;
-    transform: scale(1.1);
-    color: rgb(231, 255, 231);
+    &:hover {
+        background-color: #4a8adb;
+        transform: scale(1.1);
+        color: rgb(231, 255, 231);
+    }
 }
-}
+
 /*===========f2=========*/
 #formulario2 {
     background-color: #201f1f;
@@ -368,9 +373,180 @@ fieldset {
     cursor: pointer;
     transition: all 0.2s ease;
     margin-top: 10px;
-&:hover {
-    background-color: #00E5FF;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 229, 255, 0.3);
+
+    &:hover {
+        background-color: #00E5FF;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 229, 255, 0.3);
+    }
 }
+
+
+.tnk {
+    color: yellowgreen;
 }
+
+.k {
+    color: yellow;
+}
+
+
+.title {
+    color: rgb(231, 255, 231);
+    background-color: #00FF88;
+}
+
+.ttl {
+    background-color: yellow;
+    color: black;
+}
+
+.pr {
+    color: greenyellow;
+    background-color: rgb(44, 136, 32);
+    border-radius: 5px;
+    box-shadow: 0 2px 15px rgb(22, 248, 1);
+    font-size: smaller;
+
+}
+
+
+.titulo-catalogo {
+    display: block;
+    
+    width: 100%;
+    margin: 20px 0;
+    padding: 15px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background-color: #3e9b45;
+    border: 2px solid #48ff00;
+    border-radius: 8px;
+
+    color: white;
+}
+
+.titulo-catalogo h2 {
+    margin: 0;
+
+    color: #ff0000;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.titulo-catalogo p {
+    margin: 5px 0 0;
+
+    color: #aaa;
+}
+
+
+
+
+
+
+/* ==============================
+   ÁREA DOS JOGOS
+============================== */
+
+.jogos {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+/* ==============================
+   CARDS DOS JOGOS
+============================== */
+
+.jogo {
+    flex: 1 1 200px;
+
+    max-width: 220px;
+
+    margin: 0;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background-color: #111;
+
+    border: 3px solid rgb(58, 58, 58);
+
+    border-radius: 5px;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+
+/* IMAGENS */
+
+.jogo img {
+    width: 100%;
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 5px;
+}
+
+
+/* ==============================
+   HOVER
+============================== */
+
+.jogo:hover {
+    transform: translateY(-5px);
+
+    background-color: rgb(77, 39, 77);
+
+    box-shadow:
+        0 0 15px rgb(0, 255, 98);
+}
+
+
+/* ==============================
+   BOTÃO
+============================== */
+
+.jogo button {
+    padding: 8px 20px;
+
+    color: rgb(30, 30, 30);
+
+    background-color: greenyellow;
+
+    border: 2px solid rgb(60, 255, 11);
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.jogo button:hover {
+    background-color: rgb(88, 131, 24);
+
+    color: white;
+
+    transform: scale(1.05);
+}
+
+
